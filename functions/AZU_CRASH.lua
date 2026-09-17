@@ -5,6 +5,8 @@ local function doChecks()
 end
 
 
+-- still work in progress just experimental
+
 getgenv().AZU_CRASH() = function(mode)
   if mode == "PLR" then
     while true do end

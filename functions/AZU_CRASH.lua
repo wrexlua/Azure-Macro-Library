@@ -1,11 +1,12 @@
+-- EXPERIMENTAL - WORK IN PROGRESS
+
+
 local function doChecks()
   if typeof(getgenv) ~= "function" or getfenv(getgenv) ~= getfenv(0) then
     return "91"
   end
 end
 
-
--- still work in progress just experimental
 
 getgenv().AZU_CRASH() = function(mode)
   if mode == "PLR" then
